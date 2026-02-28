@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loly Land · vanilla server</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка на весь экран (вне page-wrapper) -->
+    <header class="header sticky full-width">
+        <div class="header-container">
+            <div class="logo-area">
+                <h1 class="logo">Loly Land<span class="badge">vanilla</span></h1>
+                <div class="start-date">1.21.4 · Started 23.02.2026</div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#statistics">Статистика</a></li>
+                    <li><a href="#about">О проекте</a></li>
+                    <li><a href="#shop">Магазин</a></li>
+                    <li><a href="#application" class="application-link">Заявка</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-wrapper">
+        <!-- Основной контент -->
+        <main>
+            <!-- Герой-блок -->
+            <section class="hero fade-in">
+                <div class="hero-content">
+                    <h2 class="hero-title">Динамичность. Сплочённость. Разносторонность.</h2>
+                    <p class="hero-description">Loly Land — это приватный ванильный сервер Minecraft с лучшим геймлеем!<br>Перед началом игры нужно подать заявку.</p>
+                    <div class="hero-buttons">
+                        <a href="https://t.me/Loly_Land" target="_blank" class="btn-primary">Присоединиться</a>
+                        <a href="#" class="btn-secondary copy-ip" data-ip="lolyland.20tps.ru">Скопировать IP</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Блок "Доступ на сервер" -->
+            <section class="access fade-in">
+                <div class="access-content">
+                    <h2 class="section-title">Доступ на Loly Land</h2>
+                    <p class="access-description">Наш сервер — это чистый Minecraft без привата территорий, лишних плагинов. Присоединиться могут все, независимо от версии игры, как с пиратской, так и с лицензионной.</p>
+                    <div class="access-info">
+                        <span class="price">БЕСПЛАТНО</span>
+                        <span class="version">1.21.4 · Java Edition</span>
+                    </div>
+                    <div class="access-buttons">
+                        <a href="https://t.me/Loly_Land" target="_blank" class="btn-primary">Присоединиться</a>
+                        <a href="#" class="btn-secondary copy-ip" data-ip="lolyland.20tps.ru">Скопировать IP</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Статистика сервера -->
+            <section id="statistics" class="stats fade-in">
+                <h2 class="section-title">Статистика сервера</h2>
+                <p class="section-subtitle">Сводка и статус сервера</p>
+
+                <div class="status-card">
+                    <div class="status-label">СТАТУС СЕРВЕРА</div>
+                    <div class="status-value online">Онлайн</div>
+                    <div class="current-online">Текущий онлайн: <strong>25 / 200</strong></div>
+                </div>
+
+                <div class="leaderboard">
+                    <div class="leaderboard-item">
+                        <span class="leaderboard-number">786</span>
+                        <span class="leaderboard-label">Наше комьюнити<br><small>Присоединились к серверу</small></span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="leaderboard-number">75</span>
+                        <span class="leaderboard-label">Максимальный онлайн<br><small>Одновременно</small></span>
+                    </div>
+                </div>
+
+                <h3 class="stats-subtitle">Статистика мира</h3>
+                <p class="stats-subdesc">Суммарные данные всех игроков</p>
+
+                <div class="world-stats-grid">
+                    <div class="stat-item"><span class="stat-number">10963 ч 31 мин</span> <span class="stat-label">Всего наиграно</span></div>
+                    <div class="stat-item"><span class="stat-number">1 477</span> <span class="stat-label">Смертей</span></div>
+                    <div class="stat-item"><span class="stat-number">419</span> <span class="stat-label">Убийств игроков</span></div>
+                    <div class="stat-item"><span class="stat-number">430 185</span> <span class="stat-label">Убийств мобов</span></div>
+                    <div class="stat-item"><span class="stat-number">2 902 813</span> <span class="stat-label">Блоков сломано</span></div>
+                    <div class="stat-item"><span class="stat-number">1 246 146</span> <span class="stat-label">Блоков поставлено</span></div>
+                    <div class="stat-item"><span class="stat-number">49 283</span> <span class="stat-label">Достижений</span></div>
+                </div>
+            </section>
+
+            <!-- Список игроков -->
+            <section class="players fade-in">
+                <h2 class="section-title">Игроки сервера</h2>
+                <p class="section-subtitle">Список игроков и их статистика · 1-24 из 223</p>
+
+                <div class="players-grid">
+                    <div class="player-card">
+                        <div class="player-name">lalawar</div>
+                        <div class="player-status online"><i class="fas fa-circle"></i> В сети</div>
+                        <div class="player-playtime">350 ч 52 мин</div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-name">carlistish</div>
+                        <div class="player-status offline"><i class="fas fa-circle"></i> Не в сети</div>
+                        <div class="player-playtime">230 ч 22 мин</div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-name">SEDE</div>
+                        <div class="player-status online"><i class="fas fa-circle"></i> В сети</div>
+                        <div class="player-playtime">182 ч 33 мин</div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-name">LeoVinchi454</div>
+                        <div class="player-status offline"><i class="fas fa-circle"></i> Не в сети</div>
+                        <div class="player-playtime">167 ч 31 мин</div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-name">aneerdd</div>
+                        <div class="player-status online"><i class="fas fa-circle"></i> В сети</div>
+                        <div class="player-playtime">337 ч</div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-name">turtle_pain</div>
+                        <div class="player-status online"><i class="fas fa-circle"></i> В сети</div>
+                        <div class="player-playtime">227 ч 11 мин</div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-name">Vaerminaxo</div>
+                        <div class="player-status online"><i class="fas fa-circle"></i> В сети</div>
+                        <div class="player-playtime">168 ч 31 мин</div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-name">Obizynka</div>
+                        <div class="player-status offline"><i class="fas fa-circle"></i> Не в сети</div>
+                        <div class="player-playtime">170 ч</div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-name">Lohwel</div>
+                        <div class="player-status online"><i class="fas fa-circle"></i> В сети</div>
+                        <div class="player-playtime">270 ч 33 мин</div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-name">ComboGames_GG</div>
+                        <div class="player-status online"><i class="fas fa-circle"></i> В сети</div>
+                        <div class="player-playtime">220 ч 26 мин</div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-name">5api</div>
+                        <div class="player-status offline"><i class="fas fa-circle"></i> Не в сети</div>
+                        <div class="player-playtime">165 ч 5 мин</div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-name">duonp</div>
+                        <div class="player-status online"><i class="fas fa-circle"></i> В сети</div>
+                        <div class="player-playtime">170 ч</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Блок "Сейчас на сервере" -->
+            <section class="live-now fade-in">
+                <h2 class="section-title">Сейчас на сервере</h2>
+                <div class="live-grid">
+                    <div class="live-item">
+                        <i class="fas fa-users"></i>
+                        <span>12 игроков онлайн</span>
+                    </div>
+                    <div class="live-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Ивент "Новоселье" до 10.03</span>
+                    </div>
+                    <div class="live-item">
+                        <i class="fas fa-star"></i>
+                        <span>Топ недели: lalawar</span>
+                    </div>
+                </div>
+            </section>
+
+<!-- Форма заявки -->
+<section id="application" class="application-section fade-in">
+    <div class="container">
+        <h2 class="section-title">Подать заявку на вступление</h2>
+        <p style="text-align: center; margin-bottom: 30px;">
+            Заполните форму ниже, а пока мы будем рассматривать вашу заявку, для её одобрения вы должны присоединиться к 
+            <a href="https://t.me/clorum_gr/2" target="_blank" style="color: #7fd4ff; text-decoration: none; font-weight: bold;">чату</a>
+        </p>
+        
+        <form class="application-form" id="applicationForm">
+            <div class="form-group">
+                <label for="age">Возраст *</label>
+                <input type="number" id="age" name="age" required placeholder="Ваш возраст">
+            </div>
+            
+            <div class="form-group">
+                <label for="nickname">Ник в Minecraft *</label>
+                <input type="text" id="nickname" name="nickname" required placeholder="Ваш никнейм">
+            </div>
+            
+            <div class="form-group">
+                <label for="purpose">Для чего пришли на проект? *</label>
+                <textarea id="purpose" name="purpose" rows="4" required placeholder="Напишите, зачем хотите играть на нашем сервере..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="telegram">Ваш Telegram *</label>
+                <input type="text" id="telegram" name="telegram" required placeholder="Например: @user">
+            </div>
+            
+            <button type="submit" class="btn-primary submit-btn">Отправить заявку</button>
+        </form>
+        
+        <div id="formMessage" class="form-message"></div>
+    </div>
+</section>
+
+            <!-- Призыв к действию -->
+            <section class="cta fade-in">
+                <h2 class="cta-title">Готов к приключению?</h2>
+                <div class="cta-buttons">
+                    <a href="https://t.me/Loly_Land" target="_blank" class="btn-primary">Присоединиться</a>
+                    <a href="#" class="btn-secondary copy-ip" data-ip="lolyland.20tps.ru">Скопировать IP</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">Loly Land <span class="badge">#vanilla</span></div>
+                <div class="footer-links">
+                    <a href="#statistics">Статистика</a> <span>|</span>
+                    <a href="#">О проекте</a> <span>|</span>
+                    <a href="#">Магазин</a>
+                </div>
+                <div class="footer-legal">
+                    <p>Вся размещенная информация на сайте не является публичной офертой.</p>
+                    <p>We are in no way affiliated with or endorsed by Mojang, AB.</p>
+                </div>
+                <div class="footer-credits">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Скрипт для копирования IP
+        document.querySelectorAll('.copy-ip').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const ip = btn.getAttribute('data-ip');
+                navigator.clipboard.writeText(ip).then(() => {
+                    alert('IP скопирован: ' + ip);
+                }).catch(() => {
+                    prompt('Не удалось скопировать. Скопируйте вручную:', ip);
+                });
+            });
+        });
+
+        // Плавный скролл к форме заявки
+        document.querySelector('.application-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#application').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        // Обработка формы - отправка в Telegram
+const applicationForm = document.getElementById('applicationForm');
+const formMessage = document.getElementById('formMessage');
+
+applicationForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const BOT_TOKEN = '8646653417:AAHcuZpPVW4IpByQCO-aZLSoBEFdnQ5JVnc';
+    const CHAT_ID = '-5000884443';
+    
+    const formData = new FormData(applicationForm);
+    const age = formData.get('age');
+    const nickname = formData.get('nickname');
+    const purpose = formData.get('purpose');
+    const telegram = formData.get('telegram');
+    
+    const message = `**НОВАЯ ЗАЯВКА**\n\n` +
+                   `🔹 Возраст: ${age}\n` +
+                   `🔹 Ник в Minecraft: ${nickname}\n` +
+                   `🔹 Цель: ${purpose}\n` +
+                   `🔹 Telegram: ${telegram}\n` +
+                   `🔹 Время: ${new Date().toLocaleString('ru-RU')}`;
+    
+    // Показываем загрузку
+    formMessage.style.display = 'block';
+    formMessage.innerHTML = `<h3>Отправляем заявку...</h3>`;
+    
+    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            chat_id: CHAT_ID,
+            text: message,
+            parse_mode: 'Markdown'
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Telegram response:', data);
+        if (data.ok) {
+            formMessage.innerHTML = `
+                <h3 style="color: #2ecc71;">✓ ЗАЯВКА ОТПРАВЛЕНА!</h3>
+                <p>Ваша заявка была отправлена администрации.</p>
+                <p><strong>Ожидайте ответа в Telegram!</strong></p>
+            `;
+            applicationForm.reset();
+        } else {
+            throw new Error(data.description || 'Unknown error');
+        }
+    })
+    .catch(error => {
+        formMessage.innerHTML = `
+            <h3 style="color: #e74c3c;">❌ Ошибка отправки</h3>
+            <p>${error.message}</p>
+            <p>Попробуйте еще раз или свяжитесь с @Nefo_Osvald</p>
+        `;
+    });
+});
+
+        // Анимация при прокрутке
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
